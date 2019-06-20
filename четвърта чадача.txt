@@ -1,0 +1,19 @@
+int n = int.Parse(Console.ReadLine());
+
+int leftSpaces = ((n * 2) + 3) / 2;
+string emptySpaces = new string(' ', leftSpaces);
+
+Console.WriteLine(emptySpaces + "|" + emptySpaces);
+
+leftSpaces -= 1;
+for(int i = 0; i < n; i++)
+{
+emptySpaces = new string(' ', leftSpaces);
+Console.Write(emptySpaces);
+Console.Write(new string('*', i+1));
+Console.Write("|");
+Console.Write(new string('*', i + 1));
+Console.WriteLine();
+
+leftSpaces--;
+}

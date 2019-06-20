@@ -1,0 +1,4 @@
+string name = Console.ReadLine();
+int mass = int.Parse(Console.ReadLine());
+double count = mass / 1.12;
+Console.WriteLine("Здравей" + " " + name + " " + "Вие заемате" + " "  + mass + " " + "литра в пространството");

@@ -1,0 +1,12 @@
+double x = double.Parse(Console.ReadLine());
+double y = double.Parse(Console.ReadLine());
+if (y== - 2)
+{
+ Console.WriteLine("Недопустима стойнопст!");
+}
+else if(y == -1){
+ Console.WriteLine("Недопустима стойност!");
+}
+else{
+ Console.WriteLine((2-x)/(1+(1/(1+y))));
+}
